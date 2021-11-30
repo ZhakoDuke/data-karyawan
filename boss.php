@@ -80,7 +80,9 @@ if( isset($_POST["submit"]) ) {
             <td><?= $nabz["alamat"] ?></td>
             <td><?= $nabz["umur"] ?></td>
             <td><?= $nabz["gajikaryawan"] ?></td>
-            <td></td>
+            <td>
+                <a href="">Hapus</a>
+            </td>
         </tr>
         <?php endforeach; ?>
     </table>
