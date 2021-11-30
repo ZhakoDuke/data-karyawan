@@ -1,21 +1,21 @@
 <?php 
-require 'functions.php';
+require 'functionsbozz.php';
 
 $id = $_GET["id"];
 
 
-    if( hapus($id) > 0 ) {
+    if( bosshap($id) > 0 ) {
     echo "
         <script>
-            alert('Berhasil Memecat Karyawan!');
-            document.location.href = 'index.php';
+            alert('Berhasil Mengganti Boss!');
+            document.location.href = 'boss.php';
         </script>
         ";
     } else {
     echo "
         <script>
-            alert('Gagal Memecat Karyawan!');
-            document.location.href = 'index.php';
+            alert('Gagal Mengganti Boss!');
+            document.location.href = 'boss.php';
         </script>
         ";
     }

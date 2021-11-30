@@ -24,4 +24,13 @@ function tambah($data) {
 
     return mysqli_affected_rows($conn);
 }
+
+
+function bosshap($id) {
+    global $conn;
+    $query = "DELETE FROM namabozz WHERE $id = id";
+    mysqli_query($conn, $query);
+
+    return mysqli_affected_rows($conn);
+}
 ?>

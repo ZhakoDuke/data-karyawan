@@ -10,14 +10,14 @@ if( isset($_POST["submit"]) ) {
     echo "
         <script>
             alert('Berhasil Menambah Boss!');
-            document.location.href = 'index.php';
+            document.location.href = 'boss.php';
         </script>
         ";
     } else {
     echo "
         <script>
             alert('Gagal Menambah Boss!');
-            document.location.href = 'index.php';
+            document.location.href = 'boss.php';
         </script>
         ";
     }
@@ -81,7 +81,7 @@ if( isset($_POST["submit"]) ) {
             <td><?= $nabz["umur"] ?></td>
             <td><?= $nabz["gajikaryawan"] ?></td>
             <td>
-                <a href="">Hapus</a>
+                <a href="hapus.php?id=<?= $nabz["id"]; ?>" onclick="return confirm('Yakin Ingin Dihapus!')">Hapus</a>
             </td>
         </tr>
         <?php endforeach; ?>
